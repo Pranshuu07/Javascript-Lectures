@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        ul{
+            list-style: none;
+        }
+        li{
+            border: solid 1px black;
+            border-radius: 50px;
+            float: left;
+            padding: 30px;
+            margin: 10px;
+            background-color: black;
+            color: white;
+        }
+
+    </style>
+
+    <script>
+
+        function loop_print(){
+        end_no = document.getElementById("end").value;
+
+        print_r = document.getElementById("result");
+
+        end_no = +end_no;
+
+        for(a = 1; a <= end_no ; a++){
+            print_r.innerHTML += "<li>"+a+"</li>";
+        }
+        }
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+
+    <label>End Number</label>
+    <input type="text" id="end">
+    <button onclick="loop_print()">Submit</button>
+
+    <ul id="result">
+        
+    </ul>
+
+
+</body>
+</html>
